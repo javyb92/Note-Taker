@@ -11,7 +11,7 @@ app.use(express.json());
 //Sets up a path to the folders files to grab
 app.use(express.static("public"));
 
-// require("./routes/apiRoutes")(app);
+require("./routes/apiRoutes")(app);
 
 //Links server.js to htmlRoutes.js
 require("./routes/htmlRoutes.js")(app);
