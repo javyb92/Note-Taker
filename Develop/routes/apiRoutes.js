@@ -1,22 +1,28 @@
-var noteData = require ("../db/db.json")
+var noteData = require("../db/db.json")
+var router = require("express").Router();
 var fs = require("fs");
 
-
-module.exports = function(app){
-
-    app.get("/api/notes", function(req, res) {
+    //Recieve all notes
+    router.get("/api/notes", function(req, res) {
         res.json(noteData);
-      });
+    });
 
-    app.post("/api/notes", function(req, res) {
+    //Recieve targeted note
+    router.get("/api/notes/:id", function(req, res) {
+        var chosen = req.params.note;
+        console.log(chosen);
+    
+    });
+
+    //Making notes using push
+    router.post("/api/notes", function(req, res) {
         noteData.push(req.body);
         res.json(true);
-        
-    });
-
-    app.delete("/api/notes/:id", function(req, res) {
 
     });
+    //Supposed to deleted targeted notes
+    router.delete("/api/notes/:id", function(req, res) {
 
+    });
 
-}
+    module.exports = router;
