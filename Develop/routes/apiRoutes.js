@@ -2,12 +2,6 @@ var noteData = require("../db/db.json")
 var router = require("express").Router();
 var fs = require("fs");
 
-    ///api/api/notes
-    //Recieve all notes
-
-    // server.js
-    // /api       +      "/notes" 
-
     router.get("/notes", function(req, res) {
         res.json(noteData);
     });
@@ -29,6 +23,9 @@ var fs = require("fs");
     router.delete("/notes/:id", function(req, res) {
         // remove the record with matching ID from the noteData array
         // 'javascript how to remove from array'
+        // req.body.id
+        //fs
+
         noteData.pop();
         res.json(true);
     });
