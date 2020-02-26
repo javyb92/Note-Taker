@@ -23,4 +23,8 @@
 https://quiet-lowlands-82326.herokuapp.com/
 <br>
 <br>
+<h2>Contact Info</h2>
+LinkedIn- https://www.linkedin.com/in/javierabarragan92/
+Gmail- javier.a.barragan92@gmail.com
+
 Made with frustration.
