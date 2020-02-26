@@ -1,6 +1,6 @@
 <h1>Note Taker Powered by Express</h1>
 
-![Capture WF]
+![Note Taker](https://user-images.githubusercontent.com/59591116/75308120-295ff980-5813-11ea-90be-a9db3cedc0bd.gif)
 
 <h2>Description</h2>
  This Note Taker is powered by Express with the provided front-end developed page and I worked on the back end of it.
