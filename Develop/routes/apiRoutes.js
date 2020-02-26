@@ -1,32 +1,35 @@
-var noteData = require("../db/db.json")
+//Dependencies
+const noteData = require("../db/db.json")
 var router = require("express").Router();
-var fs = require("fs");
 
+//Deletes Test page on load using splice, posting & getting  notes still functional 
+const result = noteData.find( ({ text }) => text === "Test text" );
+noteData.splice(result, 1);
+
+
+//Recieve notes data
     router.get("/notes", function(req, res) {
         res.json(noteData);
     });
 
-    //Recieve targeted note
+//Recieve targeted note
     router.get("/notes/:id", function(req, res) {
         var chosen = req.params.note;
         console.log(chosen);
-    
     });
 
-    //Making notes using push
+//Making notes using post
     router.post("/notes", function(req, res) {
         noteData.push(req.body);
         res.json(true);
-    });
+        });
 
-    //Supposed to deleted targeted notes
+//Supposed to deleted targeted notes
     router.delete("/notes/:id", function(req, res) {
-        // remove the record with matching ID from the noteData array
-        // 'javascript how to remove from array'
-        // req.body.id
-        //fs
-
-        noteData.pop();
+        
+//Used splice & map to remove specific array
+        var removeIndex = noteData.map(function(item) { return item.id; }).indexOf(req.params.id);
+        noteData.splice(removeIndex, 1);
         res.json(true);
     });
 
