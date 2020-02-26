@@ -21,10 +21,11 @@
 
 <h2>Project Link</h2>
 https://quiet-lowlands-82326.herokuapp.com/
-<br>
-<br>
+
 <h2>Contact Info</h2>
 <li>LinkedIn- https://www.linkedin.com/in/javierabarragan92/ </li>
 <li>Gmail- javier.a.barragan92@gmail.com</li>
-
+<br>
+<br>
+<br>
 Made with frustration.
