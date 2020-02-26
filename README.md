@@ -8,7 +8,7 @@
 <h2>Built With</h2>
 <li>Node.js </li>
 <li>Express.js- https://expressjs.com/</li>
-<li>-Heroku</li>
+<li>Heroku</li>
 
 <h2>Roadmap or what I could have done better</h2>
 <li>Refractor the code, it could be better</li>
@@ -20,5 +20,6 @@
 
 <h2>Project Link</h2>
 https://quiet-lowlands-82326.herokuapp.com/
-
+<br>
+<br>
 Made with frustration.
