@@ -13,7 +13,8 @@
 <h2>Roadmap or what I could have done better</h2>
 <li>Refractor the code, it could be better</li>
 
-<h2> Acknowledgements / References (outside the teaching staff)</h2>
+<h2> Acknowledgements / References</h2>
+<li>Teaching staff</li>
 <li>My Tutor, Devin</li>
 <li>MDN- https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/find</li>
 <li>Stack Overflow- https://stackoverflow.com/questions/16491758/remove-objects-from-array-by-object-property</li>
